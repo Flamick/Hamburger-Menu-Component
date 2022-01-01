@@ -124,6 +124,35 @@ body {
 
     &.open {
         left: 0;
+
+        & .navlink-1,
+        & .navlink-2,
+        & .navlink-3,
+        & .navlink-4,
+        & .navlink-5 {
+            transform: translateX(0);
+        }
+    }
+
+    .navlink-1 {
+        transform: translateX(100%);
+        transition: 500ms all 150ms;
+    }
+    .navlink-2{
+        transform: translateX(100%);
+        transition: 500ms all 250ms;
+    }
+    .navlink-3 {
+        transform: translateX(100%);
+        transition: 500ms all 350ms;
+    }
+    .navlink-4 {
+        transform: translateX(100%);
+        transition: 500ms all 450ms;
+    }
+    .navlink-5 {
+        transform: translateX(100%);
+        transition: 500ms all 550ms;
     }
 }
 

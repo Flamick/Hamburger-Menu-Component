@@ -100,6 +100,27 @@ body {
     color: #333; }
   #mobile-menu.open {
     left: 0; }
+    #mobile-menu.open .navlink-1,
+    #mobile-menu.open .navlink-2,
+    #mobile-menu.open .navlink-3,
+    #mobile-menu.open .navlink-4,
+    #mobile-menu.open .navlink-5 {
+      transform: translateX(0); }
+  #mobile-menu .navlink-1 {
+    transform: translateX(100%);
+    transition: 500ms all 150ms; }
+  #mobile-menu .navlink-2 {
+    transform: translateX(100%);
+    transition: 500ms all 250ms; }
+  #mobile-menu .navlink-3 {
+    transform: translateX(100%);
+    transition: 500ms all 350ms; }
+  #mobile-menu .navlink-4 {
+    transform: translateX(100%);
+    transition: 500ms all 450ms; }
+  #mobile-menu .navlink-5 {
+    transform: translateX(100%);
+    transition: 500ms all 550ms; }
 
 @media screen and (min-width: 768px) {
   #mobile-nav {
