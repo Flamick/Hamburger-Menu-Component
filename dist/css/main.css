@@ -108,6 +108,7 @@ body {
 .menu-label.open {
 	transform: translateX(-50px);
 	color: transparent;
+	pointer-events: none;
 }
 
 #mobile-menu {
