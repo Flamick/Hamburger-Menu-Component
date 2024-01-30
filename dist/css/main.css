@@ -94,6 +94,22 @@ body {
 	transform: rotate(-45deg) translate(35px, 35px);
 }
 
+.menu-btn-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
+}
+
+.menu-label {
+	transition: all 500ms ease-in-out;
+}
+
+.menu-label.open {
+	transform: translateX(-50px);
+	color: transparent;
+}
+
 #mobile-menu {
 	display: flex;
 	flex-direction: column;
@@ -132,23 +148,23 @@ body {
 }
 #mobile-menu .navlink-1 {
 	transform: translateX(100%);
-	transition: 500ms all 150ms;
+	transition: 500ms all 150ms ease-in-out;
 }
 #mobile-menu .navlink-2 {
 	transform: translateX(100%);
-	transition: 500ms all 250ms;
+	transition: 500ms all 250ms ease-in-out;
 }
 #mobile-menu .navlink-3 {
 	transform: translateX(100%);
-	transition: 500ms all 350ms;
+	transition: 500ms all 350ms ease-in-out;
 }
 #mobile-menu .navlink-4 {
 	transform: translateX(100%);
-	transition: 500ms all 450ms;
+	transition: 500ms all 450ms ease-in-out;
 }
 #mobile-menu .navlink-5 {
 	transform: translateX(100%);
-	transition: 500ms all 550ms;
+	transition: 500ms all 550ms ease-in-out;
 }
 
 #mobile-menu.closed .navlink-1,
@@ -157,12 +173,12 @@ body {
 #mobile-menu.closed .navlink-4,
 #mobile-menu.closed .navlink-5 {
 	transform: translateX(100%);
-	transition: 500ms all;
+	transition: 500ms all ease-in-out;
 }
 
 #mobile-menu.closed {
 	left: 100%;
-	transition: 500ms all;
+	transition: 500ms all ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
